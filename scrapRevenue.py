@@ -30,16 +30,19 @@ def crawl(code):
 
 finance, annual, quarter = crawl('005930')
 
-print(annual.iloc[0]) # 매출액
-print(annual.iloc[1]) # 영업이익
-print(annual.iloc[2]) # 당기순이익
-print(annual.iloc[5]) # ROE
-print(annual.iloc[6]) # 부채비율
-print(annual.iloc[8]) # 유보율
+# print(annual.iloc[0]) # 매출액
+# print(annual.iloc[1]) # 영업이익
+# print(annual.iloc[2]) # 당기순이익
+# print(annual.iloc[5]) # ROE
+# print(annual.iloc[6]) # 부채비율
+# print(annual.iloc[8]) # 유보율
 
-print(quarter.iloc[0]) # 매출액
-print(quarter.iloc[1]) # 영업이익
-print(quarter.iloc[2]) # 당기순이익
-print(quarter.iloc[5]) # ROE
-print(quarter.iloc[6]) # 부채비율
-print(quarter.iloc[8]) # 유보율
+# print(quarter.iloc[0]) # 매출액
+# print(quarter.iloc[1]) # 영업이익
+# print(quarter.iloc[2]) # 당기순이익
+# print(quarter.iloc[5]) # ROE
+# print(quarter.iloc[6]) # 부채비율
+# print(quarter.iloc[8]) # 유보율
+
+quarter_rev = quarter.iloc[1].to_dict()
+print(quarter_rev['2020.12'])
